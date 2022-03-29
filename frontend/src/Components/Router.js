@@ -8,8 +8,8 @@ import Flujo from './Flujo'
 export default function Router() {
      return (
           <Routes>
-               <Route path='/' element={<Home/>}></Route>
-               <Route path='/login' element={<Login />}></Route>
+               <Route path='/' element={<Login/>}></Route>
+               <Route path='/Home' element={<Home/>}></Route>
                <Route path='/categorias' element={<Categorias />}></Route>
                <Route path='/flujo' element={<Flujo />}></Route>
           </Routes>
