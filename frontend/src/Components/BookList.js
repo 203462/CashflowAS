@@ -5,7 +5,7 @@ const BookList = ({book, setBook, categorias, setListUpdated}) => {
         const requestInit = {
             method: 'DELETE'
         }
-        fetch('http://localhost:9000/api/' + id, requestInit)
+        fetch('http://localhost:3001/api/' + id, requestInit)
         .then(res => res.text())
         .then(res => console.log(res))
 
@@ -24,7 +24,7 @@ const BookList = ({book, setBook, categorias, setListUpdated}) => {
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify(book)
         }
-        fetch('http://localhost:9000/api/' + id, requestInit)
+        fetch('http://localhost:3001/api/' + id, requestInit)
         .then(res => res.text())
         .then(res => console.log(res))
 

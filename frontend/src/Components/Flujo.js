@@ -23,7 +23,7 @@ export default function Flujo(){
                                         <a className="nav-link" href="Flujo">Flujo de efectivo</a>
                                    </li>
                                    <li className="nav-item">
-                                        <a className="nav-link disabled">Disabled</a>
+                                   <a className="nav-link" href='#'>Disabled</a>
                                    </li>
                               </ul>
                          </div>

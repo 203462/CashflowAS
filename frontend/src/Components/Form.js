@@ -25,7 +25,7 @@ const Form = ({book, setBook}) => {
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify(book)
         }
-        fetch('http://localhost:9000/api', requestInit)
+        fetch('http://localhost:3001/api', requestInit)
         .then(res => res.text())
         .then(res => console.log(res))
 

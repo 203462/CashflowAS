@@ -63,4 +63,21 @@ routes.post('/login', (req, res) => {
         })
     })
 })
+
+routes.post('/register', (req, res) => {
+    const user = req.body.user;
+    const password = req.body.password;
+    const cargo = req.body.cargo;
+    req.getConnection((err, conn) => {
+        conn.query('INSERT INTO usuarios (user, password, cargo) VALUES (?,?, ?)', [user, password, cargo], (err, result) => {
+            if (err) {
+                console.log(err)
+            } else {
+                if (result) {
+                    res.send(result)
+                } 
+            }
+        })
+    })
+})
 module.exports = routes

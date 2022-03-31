@@ -15,7 +15,7 @@ export default function Categorias() {
 
   useEffect(() => {
     const getBooks = () => {
-      fetch('http://localhost:9000/api')
+      fetch('http://localhost:3001/api')
         .then(res => res.json())
         .then(res => setBooks(res))
     }
@@ -43,12 +43,13 @@ export default function Categorias() {
                 <a className="nav-link" href="Flujo">Flujo de efectivo</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link disabled">Disabled</a>
+                <a className="nav-link" href='#'>Disabled</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
+      <br/><br/>
       <div className="container">
         <div className="row">
           <div className="col-7">

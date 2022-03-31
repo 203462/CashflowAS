@@ -1,4 +1,5 @@
-import react from 'react';
+
+import './assetss/css/Login.css'
 
 export default function Home() {
      return (
@@ -21,19 +22,24 @@ export default function Home() {
                                         <a className="nav-link" href="Flujo">Flujo de efectivo</a>
                                    </li>
                                    <li className="nav-item">
-                                        <a className="nav-link disabled">Disabled</a>
+                                   <a className="nav-link" href='#'>Disabled</a>
                                    </li>
                               </ul>
                          </div>
                     </div>
                </nav>
-               <div class="index-form">
-                    <h1>CashFlow</h1>
-
-                    <a href="Categorias" class="botton-login">Categorias</a>
-                    <br />
-                    <br />
-                    <a href="Flujo" class="botton-register">Flujo de efectivo</a>
+               <div>
+               <div className="position-relative overflow-hidden p-3 p-md-5 m-md-5 text-center bg-light">
+                         <div className="col-md-5 p-lg-5 mx-auto my-5">
+                              <h1 className="display-4 fw-normal">Cashflow</h1>
+                              <p className="lead fw-normal">Arquitectura de Software</p>
+                              <a className="btn btn-outline-secondary" href="Categorias">Crear categorias</a>
+                              <br/><br/>
+                              <a className="btn btn-outline-secondary" href="Flujo">Flujo de efectivo</a>
+                         </div>
+                         <div className="product-device shadow-sm d-none d-md-block"></div>
+                         <div className="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+                    </div>
                </div>
           </div>
      )
