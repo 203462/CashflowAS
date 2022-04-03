@@ -12,10 +12,10 @@ const BookList = ({book, setBook, categorias, setListUpdated}) => {
         setListUpdated(true)
     }
 
-    let{clasificacion, categoria, subcategoria} = book
+    let{categoria, subcategoria} = book
     const handleUpdate = id => {
         //validación de los datos
-        if (clasificacion === '' || categoria === '' || subcategoria === '' ) {
+        if ( categoria === '' || subcategoria === '' ) {
             alert('Todos los campos son obligatorios')
             return
         }
@@ -43,7 +43,6 @@ const BookList = ({book, setBook, categorias, setListUpdated}) => {
             <thead>
                 <tr>
                     <th>ID</th>
-                    <th>Clasificacion</th>
                     <th>Categoria</th>
                     <th>Subcategoria</th>
                 </tr>
@@ -52,7 +51,6 @@ const BookList = ({book, setBook, categorias, setListUpdated}) => {
                 {categorias.map(book => (
                     <tr key={book.id}>
                         <td>{book.id}</td>
-                        <td>{book.clasificacion}</td>
                         <td>{book.categoria}</td>
                         <td>{book.subcategoria}</td>
                         <td>

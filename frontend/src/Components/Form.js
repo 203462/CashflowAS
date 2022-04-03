@@ -9,12 +9,12 @@ const Form = ({book, setBook}) => {
         })
     }
 
-    let{clasificacion, categoria, subcategoria} = book
+    let{categoria, subcategoria} = book
 
     const handleSubmit = () => {
       
         //validación de los datos
-        if (clasificacion === '' || categoria === '' || subcategoria === '' ) {
+        if (categoria === '' || subcategoria === '' ) {
             alert('Todos los campos son obligatorios')
             return
         }
@@ -31,7 +31,6 @@ const Form = ({book, setBook}) => {
 
         //reiniciando state de libro
         setBook({
-            clasificacion: '',
             categoria: '',
             subcategoria: ''
         })
@@ -39,10 +38,6 @@ const Form = ({book, setBook}) => {
 
     return ( 
         <form onSubmit={handleSubmit}>
-            <div className="mb-3">
-                <label htmlFor="clasification" className="form-label">Clasificacion</label>
-                <input value={clasificacion} name="clasificacion" onChange={handleChange} type="text" id="clasificacion" className="form-control"/>
-            </div>
             <div className="mb-3">
                 <label htmlFor="categorie" className="form-label">Categoria</label>
                 <input value={categoria} name="categoria" onChange={handleChange} type="text" id="categoria" className="form-control"/>
