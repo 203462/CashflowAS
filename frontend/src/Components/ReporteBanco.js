@@ -1,6 +1,5 @@
 import axios from "axios";
 import React from "react";
-import Nav from "./Nav";
 
 class ReporteBanco extends React.Component {
   constructor(props) {

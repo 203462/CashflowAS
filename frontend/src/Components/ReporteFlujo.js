@@ -1,7 +1,6 @@
 import axios from "axios";
 import React from "react";
 import Nav from "./Nav";
-
 let ingresos = [
   [0, 0, 0, 0, 0],
   [0, 0, 0, 0, 0],
@@ -126,7 +125,7 @@ class ReporteFlujo extends React.Component {
           if (dia > 21) {
             semana = 3;
           }
-          if (element.sub_categoria === "Efectivo" ) {
+          if (element.sub_categoria === "EFECTIVO" ) {
             ingresos[0][semana] += cantidad;
           }
           if (element.sub_categoria === "DEPOSITO") {

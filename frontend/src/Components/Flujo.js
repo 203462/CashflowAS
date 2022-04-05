@@ -1,7 +1,7 @@
 import React from "react";
 import axios from "axios";
 import Nav from "./Nav";
-import { Link } from "react-router-dom";
+
 
 const Clasificacion = [
   {
